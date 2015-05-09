@@ -14,7 +14,8 @@
     <script src="js/slideshow.js"></script>
     <script>
       $(function () {
-        new Slideshow.View($(".slideshow-container"));
+        var slideshow = new Slideshow.View($(".slideshow-container"));
+        slideshow.start();
       });
     </script>
   </body>
