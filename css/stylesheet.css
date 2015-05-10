@@ -15,13 +15,13 @@ body {
   position: relative;
   display: table;
   padding-left: 0 !important;
-  box-shadow: 0 0 10px 1px #ccc;
 }
 
 img {
   position: absolute;
   width: 100%;
   display: table-row;
+  box-shadow: 0 0 10px 1px #ccc;
 }
 
 .top {
