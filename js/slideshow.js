@@ -33,7 +33,7 @@
     });
     this.listenForResize();
 
-    window.setInterval(this.swapPictures.bind(this), 3000);
+    window.setInterval(this.swapPictures.bind(this), 5000);
   };
 
   View.prototype.swapPictures = function () {
@@ -43,8 +43,8 @@
     var $bottomImg = $("<img class=\"bottom img-responsive\">");
     $bottomImg.attr("src", View.PICTURE_URLS[nextPicIdx]);
     this.$el.append($bottomImg);
-    $bottomImg.addClass("top").removeClass("bottom", 500);
-    $topImg.removeClass("top").addClass("bottom", 500, "swing", function () {
+    $bottomImg.addClass("top").removeClass("bottom", 1000, "swing");
+    $topImg.removeClass("top").addClass("bottom", 1000, "swing", function () {
       $topImg.remove();
     });
 
