@@ -23,6 +23,7 @@
 
   View.prototype.start = function () {
     var that = this;
+    this.preloadImages(View.PICTURE_URLS);
     var $topImg = $("<img class=\"top img-responsive\">");
     $topImg.attr("src", View.PICTURE_URLS[this.currentPicIdx]);
     this.$el.append($topImg);
@@ -56,5 +57,11 @@
       var picHeight = $("img.top").height();
       that.$el.height(picHeight);
     })
+  }
+
+  View.prototype.preloadImages = function (array) {
+    for (var i = 0; i < array.length; i++) {
+      $("<img>").attr("src", array[i]);
+    }
   }
 })();
