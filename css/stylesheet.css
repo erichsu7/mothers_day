@@ -1,3 +1,7 @@
+img {
+  position: absolute;
+}
+
 .top {
   opacity: 1;
 }

@@ -28,11 +28,10 @@
     var $bottomImg = $("<img class=\"bottom\">");
     $bottomImg.attr("src", View.PICTURE_URLS[nextPicIdx]);
     this.$el.append($bottomImg);
-    $bottomImg.removeClass("bottom");
-    $bottomImg.addClass("top");
-    $topImg.removeClass("top");
-    $topImg.addClass("bottom");
-    $topImg.remove();
+    $bottomImg.addClass("top").removeClass("bottom", 500);
+    $topImg.removeClass("top").addClass("bottom", 500, "swing", function () {
+      $topImg.remove();
+    });
 
     this.currentPicIdx = nextPicIdx;
   }
