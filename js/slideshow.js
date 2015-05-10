@@ -33,7 +33,7 @@
     });
     this.listenForResize();
 
-    window.setInterval(this.swapPictures.bind(this), 5000);
+    window.setInterval(this.swapPictures.bind(this), 7000);
   };
 
   View.prototype.swapPictures = function () {
