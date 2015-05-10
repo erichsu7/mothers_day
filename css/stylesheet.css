@@ -1,5 +1,18 @@
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.slideshow-container {
+  position: relative;
+  display: table;
+}
+
 img {
   position: absolute;
+  width: 100%;
+  display: table-row;
 }
 
 .top {
